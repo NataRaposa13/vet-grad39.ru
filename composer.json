@@ -1,0 +1,11 @@
+{
+  "autoload": {
+    "psr-4": {
+      "vet-grad\\": "vendor/vet-grad/core",
+      "app\\": "app"
+    }
+  },
+  "require": {
+
+  }
+}
