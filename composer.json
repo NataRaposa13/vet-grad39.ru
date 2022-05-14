@@ -1,7 +1,7 @@
 {
   "autoload": {
     "psr-4": {
-      "vet-grad\\": "vendor/vet-grad/core",
+      "vetgrad\\": "vendor/vet-grad/core",
       "app\\": "app"
     }
   },

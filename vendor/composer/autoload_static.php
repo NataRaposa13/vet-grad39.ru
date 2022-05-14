@@ -9,7 +9,7 @@ class ComposerStaticInite755cfc0aae8ea7ed25c4c3455e6af9e
     public static $prefixLengthsPsr4 = array (
         'v' => 
         array (
-            'vet-grad\\' => 9,
+            'vetgrad\\' => 8,
         ),
         'a' => 
         array (
@@ -18,7 +18,7 @@ class ComposerStaticInite755cfc0aae8ea7ed25c4c3455e6af9e
     );
 
     public static $prefixDirsPsr4 = array (
-        'vet-grad\\' => 
+        'vetgrad\\' => 
         array (
             0 => __DIR__ . '/..' . '/vet-grad/core',
         ),
