@@ -6,8 +6,8 @@ define("DEBUG", 1); //режим разработчика
 define("ROOT", dirname(__DIR__));
 define("WWW", ROOT . '/public');
 define("APP", ROOT . '/app');
-define("CORE", ROOT . '/vendor/eshop/core');
-define("LIBS", ROOT . '/vendor/eshop/core/libs');
+define("CORE", ROOT . '/vendor/vet-grad/core');
+define("LIBS", ROOT . '/vendor/vet-grad/core/libs');
 define("CACHE", ROOT . '/tmp/cache');
 define("CONF", ROOT . '/config');
 define("LAYOUT", 'default');
