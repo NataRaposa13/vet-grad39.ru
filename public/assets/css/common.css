@@ -1,8 +1,56 @@
-/* Color variables */
+@import './libs/uikit.css';
+@import './libs/uikit-rlt.css';
+
 body {
+    /* Color variables */
     --main-blue: #469797;
     --main-orange: #FF891B;
+    --main-blue-hover: #3D8080;
+    --main-orange-hover: #cd6e17;
 
     --light-orange: #FBE1C8;
     --light-green: #FAFCFB;
+
+    --black: #000000;
+    --white: #ffffff;
+
+    color: var(--black);
+}
+
+/* Container */
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0px 10px;
+}
+
+@media (max-width: 960px) {
+    .container {
+        max-width: 750px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .container {
+        max-width: none;
+        padding: 0 10px;
+    }
+}
+
+.uk-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.vet-button {
+    border-radius: 5px;
+}
+
+.vet-button-green {
+    background: var(--main-blue);
+}
+
+.vet-button-green:hover {
+    background: var(--main-blue-hover);
 }
