@@ -1,0 +1,18 @@
+[2022-05-15 14:17:36] Текст ошибки: Контроллер Up\controllers\MainController не найден | Файл: C:\Program1\server\OSPanel\domains\vet-grad39.ru\vendor\vet-grad\core\Router.php | Строка: 40
+-------
+[2022-05-15 14:18:06] Текст ошибки: Контроллер app\controllers\MainController не найден | Файл: C:\Program1\server\OSPanel\domains\vet-grad39.ru\vendor\vet-grad\core\Router.php | Строка: 40
+-------
+[2022-05-15 14:18:38] Текст ошибки: Метод app\controllers\MainController::indexAction не найден | Файл: C:\Program1\server\OSPanel\domains\vet-grad39.ru\vendor\vet-grad\core\Router.php | Строка: 37
+-------
+[2022-05-15 14:19:36] Текст ошибки: Call to undefined method app\controllers\MainController::getView() | Файл: C:\Program1\server\OSPanel\domains\vet-grad39.ru\vendor\vet-grad\core\Router.php | Строка: 35
+-------
+[2022-05-15 17:53:05] Текст ошибки: Class 'R' not found | Файл: C:\Program1\server\OSPanel\domains\vet-grad39.ru\vendor\vet-grad\core\Db.php | Строка: 12
+-------
+[2022-05-15 17:55:49] Текст ошибки: Class 'app\controllers\R' not found | Файл: C:\Program1\server\OSPanel\domains\vet-grad39.ru\app\controllers\MainController.php | Строка: 11
+-------
+[2022-05-15 18:03:15] Текст ошибки: Class 'R' not found | Файл: C:\Program1\server\OSPanel\domains\vet-grad39.ru\app\views\layouts\default.php | Строка: 16
+-------
+[2022-05-15 18:04:23] Текст ошибки: Class 'R' not found | Файл: C:\Program1\server\OSPanel\domains\vet-grad39.ru\app\views\layouts\default.php | Строка: 16
+-------
+[2022-05-15 18:05:41] Текст ошибки: Class 'vetgrad\R' not found | Файл: C:\Program1\server\OSPanel\domains\vet-grad39.ru\vendor\vet-grad\core\Db.php | Строка: 15
+-------
