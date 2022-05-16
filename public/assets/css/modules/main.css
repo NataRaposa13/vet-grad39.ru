@@ -1,4 +1,106 @@
 body {
     font-family: 'Bellota Text', cursive;
     font-weight: 400;
+    height: 200vh;
+}
+
+.container-relative {
+    position: relative;
+}
+
+.main-page {
+    position: relative;
+}
+
+.vet-header .uk-navbar-dropdown {
+    box-shadow: none;
+    background: var(--light-blue);
+    color: var(--white);
+}
+
+
+
+.vet-header.filled .uk-navbar-container {
+    color: var(--white);
+}
+
+.vet-header {
+    position: fixed;
+    height: 150px;
+    width: 100%;
+    transition: all 0.2s ease;
+    z-index: 1000;
+}
+
+.vet-header .uk-navbar-nav > li > a {
+    min-height: 1.2em;
+}
+
+.vet-header .blob-container {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}
+
+.vet-header.filled {
+    height: 100px;
+    background: var(--light-blue);
+}
+
+.vet-header .top-blue-blob {
+    transition: opacity 0.2s ease;
+    z-index: -1;
+    opacity: 0;
+}
+
+.vet-header.filled .top-blue-blob {
+    opacity: 1;
+}
+
+.vet-header-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    width: 100%;
+    height: 100%;
+}
+
+.vet-header .logo {
+    display: block;
+    color: var(--white);
+}
+
+.logo:hover {
+    color: var(--light-green);
+}
+
+/*.uk-container {*/
+/*    height: 100vh;*/
+/*    border: 2px dashed #6b6b6b;*/
+/*}*/
+
+.top-blue-blob {
+    width: 778px;
+    height: 721px;
+    position: absolute;
+    background: url('../../img/blue-blob.png') no-repeat;
+    background-size: contain;
+    background-position: center;
+    top: -527px;
+    left: -282px;
+}
+
+.top-orange-blob {
+    width: 747px;
+    height: 721px;
+    position: absolute;
+    background: url('../../img/orange-blob.png') no-repeat;
+    background-size: contain;
+    background-position: center;
+    top: -489px;
+    left: -253px;
 }

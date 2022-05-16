@@ -8,8 +8,10 @@ body {
     --main-blue-hover: #3D8080;
     --main-orange-hover: #cd6e17;
 
+    --light-blue: #57A9A9;
+
     --light-orange: #FBE1C8;
-    --light-green: #FAFCFB;
+    --light-green: #fafcfb;
 
     --black: #000000;
     --white: #ffffff;
@@ -35,6 +37,39 @@ body {
         max-width: none;
         padding: 0 10px;
     }
+}
+
+a {
+    transition: color 0.15s ease;
+}
+
+.uk-navbar-dropdown {
+    border-radius: 5px;
+}
+
+.uk-navbar-dropdown a {
+    color: inherit !important;
+}
+
+.uk-navbar-container a{
+    color: inherit !important;
+}
+
+.uk-navbar-container a:hover {
+    color: inherit;
+    opacity: 0.9;
+}
+
+.uk-navbar-container [uk-icon] {
+    transition: transform 0.2s ease;
+}
+
+.uk-navbar-container [aria-expanded="true"] [uk-icon^="icon: chevron-down"] {
+    transform: rotate(180deg);
+}
+
+.uk-container {
+    height: 100%;
 }
 
 .uk-button {

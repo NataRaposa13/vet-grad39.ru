@@ -11,9 +11,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bellota+Text:wght@300;400;700&family=Comfortaa:wght@300;400;700&family=Jura:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../../../public/assets/css/common.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 	<?= $this->getMeta(); ?>
 
-<!--  TODO pashtet: скорее всего вынести в body  -->
+    <!-- TODO pashtet: скорее всего вынести в body  -->
     <script defer type="module" src="../../../public/assets/js/libs/index.js"></script>
 </head>
 <body>
