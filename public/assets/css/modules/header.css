@@ -10,7 +10,7 @@
 }
 
 .vet-header .uk-divider-vertical {
-    height: 60px;
+    height: 50px;
     margin: 0 10px;
 }
 
@@ -49,13 +49,18 @@
 }
 
 .vet-header .top-blue-blob {
-    transition: opacity 0.2s ease;
+    transition: opacity 0.5s ease, height 0.5s ease;
     z-index: -1;
     opacity: 0;
 }
 
 .vet-header.filled .top-blue-blob {
     opacity: 1;
+}
+
+.vet-header.filled .top-blue-blob.logo-hovered {
+    opacity: 0.6;
+
 }
 
 .vet-header-inner {
@@ -68,6 +73,12 @@
 }
 
 .vet-header .logo {
+    position: relative;
+    z-index: 1005;
     display: block;
     color: var(--white);
+}
+
+.vet-profile-link img {
+    height: 40px;
 }

@@ -11,12 +11,15 @@
 <body>
     <div class="main-page">
         <header class="vet-header vet-header_main">
+            <div class="blob-wrap">
+                <div class="uk-container container-relative">
+                    <div class="top-blue-blob" logo-hover-animate="true"></div>
+                </div>
+            </div>
             <div class="uk-container container-relative">
                 <div class="vet-header-inner">
                     <!-- TODO pashtet: Починить overflow-->
-<!--                    <div class="blob-container">-->
-<!--                        <div class="top-blue-blob"></div>-->
-<!--                    </div>-->
+
 
                     <a href="#" class="logo">
                         <svg width="240" height="68" viewBox="0 0 240 68" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -61,9 +64,18 @@
         </header>
 
         <section class="main-first-screen">
+            <div class="blob-wrap">
+                <div class="uk-container container-relative">
+                    <div class="top-orange-blob uk-animation-slide-top-medium" logo-hover-animate="true"></div>
+                    <div class="top-blue-blob uk-animation-slide-top-small" logo-hover-animate="true"></div>
+                    <div class="blue-blob_animated uk-animation-slide-bottom-medium"></div>
+                </div>
+            </div>
             <div class="uk-container container-relative">
-                <div class="top-orange-blob uk-animation-slide-top-medium "></div>
-                <div class="top-blue-blob uk-animation-slide-top-small"></div>
+                <img class="main-first-screen__image" src="../../../public/assets/img/content/first-screen-img.png" alt="" uk-parallax="start: 30vh; end: 30vh; y: 70; easing: 0;">
+                <div class="main-first-screen__inner">
+                    <h1 class="main-title">Большой спектр ветеренарных услуг</h1>
+                </div>
             </div>
         </section>
     </div>
