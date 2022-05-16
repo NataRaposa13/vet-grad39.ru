@@ -1,24 +1,18 @@
-body {
-    font-family: 'Bellota Text', cursive;
-    font-weight: 400;
-    height: 200vh;
-}
-
-.container-relative {
-    position: relative;
-}
-
-.main-page {
-    position: relative;
-}
-
 .vet-header .uk-navbar-dropdown {
     box-shadow: none;
     background: var(--light-blue);
     color: var(--white);
 }
 
+.vet-navbar {
+    display: flex;
+    align-items: center;
+}
 
+.vet-header .uk-divider-vertical {
+    height: 60px;
+    margin: 0 10px;
+}
 
 .vet-header.filled .uk-navbar-container {
     color: var(--white);
@@ -34,6 +28,10 @@ body {
 
 .vet-header .uk-navbar-nav > li > a {
     min-height: 1.2em;
+}
+
+.vet-navbar .uk-navbar-container li > a {
+    font-family: 'Comfortaa', sans-serif;
 }
 
 .vet-header .blob-container {
@@ -72,35 +70,4 @@ body {
 .vet-header .logo {
     display: block;
     color: var(--white);
-}
-
-.logo:hover {
-    color: var(--light-green);
-}
-
-/*.uk-container {*/
-/*    height: 100vh;*/
-/*    border: 2px dashed #6b6b6b;*/
-/*}*/
-
-.top-blue-blob {
-    width: 778px;
-    height: 721px;
-    position: absolute;
-    background: url('../../img/blue-blob.png') no-repeat;
-    background-size: contain;
-    background-position: center;
-    top: -527px;
-    left: -282px;
-}
-
-.top-orange-blob {
-    width: 747px;
-    height: 721px;
-    position: absolute;
-    background: url('../../img/orange-blob.png') no-repeat;
-    background-size: contain;
-    background-position: center;
-    top: -489px;
-    left: -253px;
 }

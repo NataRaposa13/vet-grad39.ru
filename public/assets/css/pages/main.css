@@ -1,0 +1,41 @@
+@import '../modules/header.css';
+
+body {
+    font-family: 'Bellota Text', cursive;
+    font-weight: 400;
+    height: 200vh;
+}
+
+.container-relative {
+    position: relative;
+}
+
+.main-page {
+    position: relative;
+}
+
+.logo:hover {
+    color: var(--light-green);
+}
+
+.top-blue-blob {
+    width: 778px;
+    height: 721px;
+    position: absolute;
+    background: url('../../img/blue-blob.png') no-repeat;
+    background-size: contain;
+    background-position: center;
+    top: -527px;
+    left: -282px;
+}
+
+.top-orange-blob {
+    width: 747px;
+    height: 721px;
+    position: absolute;
+    background: url('../../img/orange-blob.png') no-repeat;
+    background-size: contain;
+    background-position: center;
+    top: -489px;
+    left: -253px;
+}

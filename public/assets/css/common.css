@@ -43,6 +43,10 @@ a {
     transition: color 0.15s ease;
 }
 
+.uk-navbar-nav {
+    align-items: center;
+}
+
 .uk-navbar-dropdown {
     border-radius: 5px;
 }
