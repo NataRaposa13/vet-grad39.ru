@@ -151,7 +151,7 @@ body {
     border-radius: 50%;
     background: var(--light-green);
     position: absolute;
-    top: -50%;
+    top: -85px;
     left: 50%;
     transform: translateX(-50%);
 
@@ -159,12 +159,12 @@ body {
 }
 
 .vet-card__icon {
-    max-height: 75px;
+    height: 75px;
     width: auto;
     position: absolute;
-    top: -50%;
+    top: -60px;
     left: 50%;
-    transform: translate(-50%, 35%);
+    transform: translateX(-50%);
     pointer-events: none;
 }
 
