@@ -130,6 +130,7 @@ body {
 }
 
 .vet-card {
+    text-align: center;
     position: relative;
     padding: 25px 35px;
     background: var(--light-green);
@@ -177,7 +178,6 @@ body {
 }
 
 .vet-card__text {
-    text-align: center;
     margin-top: 10px;
     color: var(--gray);
     /*font-size: var(--text-xxl);*/
