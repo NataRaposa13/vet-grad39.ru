@@ -1,7 +1,8 @@
 .vet-header .uk-navbar-dropdown {
-    box-shadow: none;
-    background: var(--light-blue);
-    color: var(--white);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 14px 25px rgba(0, 0, 0, 0.16);
+    background: var(--light-green);
+    color: var(--black);
 }
 
 .vet-navbar {

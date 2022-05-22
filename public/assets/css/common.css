@@ -11,10 +11,20 @@ body {
     --light-blue: #57A9A9;
 
     --light-orange: #FBE1C8;
-    --light-green: #fafcfb;
+    --light-green: #FAFCFB;
 
     --black: #000000;
+    --gray: #5C5C5C;
     --white: #ffffff;
+
+    --title: 60px;
+
+    --text-s: 14px;
+    --text-xs: 13px;
+    --text-m: 15px;
+    --text-l: 16px;
+    --text-xl: 18px;
+    --text-xxl: 20px;
 
     color: var(--black);
 
@@ -23,9 +33,9 @@ body {
 
 /* Container */
 .container {
-    max-width: 1170px;margin: 0 0 20px 0;
+    max-width: 1170px;
     margin: 0 auto;
-    padding: 0px 10px;
+    padding: 0 10px;
 }
 
 @media (max-width: 960px) {
