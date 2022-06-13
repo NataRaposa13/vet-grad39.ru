@@ -51,16 +51,18 @@
                     <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar="mode: click">
                         <div class="uk-navbar-left">
                             <ul class="uk-navbar-nav">
-                                <li>
-                                    <a href="#">Услуги <span uk-icon="icon: chevron-down; ratio: 0.7"></span></a>
-                                    <div class="uk-navbar-dropdown" uk-drop>
-                                        <ul class="uk-nav uk-navbar-dropdown-nav">
-                                            <li><a href="#">Стоматология</a></li>
-                                            <li><a href="#">Хирургия</a></li>
-                                            <li><a href="#">Ортодонтия</a></li>
-                                        </ul>
-                                    </div>
-                                </li>
+								<? if (!empty($serviceTypes)): ?>
+									<li>
+										<a href="#">Услуги <span uk-icon="icon: chevron-down; ratio: 0.7"></span></a>
+										<div class="uk-navbar-dropdown" uk-drop>
+											<ul class="uk-nav uk-navbar-dropdown-nav">
+												<? foreach ($serviceTypes as $serviceType): ?>
+													<li><a href="/services/<?= $serviceType['alias']; ?>"><?= $serviceType['title']; ?></a></li>
+												<? endforeach; ?>
+											</ul>
+										</div>
+									</li>
+								<? endif; ?>
                                 <li><a href="#">Магазин</a></li>
                                 <li><a href="#">Контакты</a></li>
                                 <div class="uk-divider-vertical"></div>
