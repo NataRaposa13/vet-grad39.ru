@@ -1,5 +1,6 @@
 @import './libs/uikit.css';
 @import './libs/uikit-rlt.css';
+@import './modules/form.css';
 
 body {
     /* Color variables */
@@ -31,25 +32,10 @@ body {
     overflow-x: hidden;
 }
 
-/* Container */
 .container {
-    max-width: 1170px;
-    margin: 0 auto;
-    padding: 0 10px;
+    height: 100%;
 }
 
-@media (max-width: 960px) {
-    .container {
-        max-width: 750px;
-    }
-}
-
-@media (max-width: 767.98px) {
-    .container {
-        max-width: none;
-        padding: 0 10px;
-    }
-}
 
 a {
     transition: color 0.15s ease;

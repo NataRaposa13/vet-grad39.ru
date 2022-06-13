@@ -62,7 +62,7 @@
 
         <section class="main-first-screen">
             <div class="blob-wrap">
-                <div class="uk-container container-relative">
+                <div class="container container-relative">
                     <div class="top-orange-blob uk-animation-slide-top-medium" logo-hover-animate="true"></div>
                     <div class="top-blue-blob uk-animation-slide-top-small" logo-hover-animate="true"></div>
                     <div class="blue-blob_animated uk-animation-slide-bottom-medium"></div>
@@ -73,7 +73,7 @@
                     <div class="syrcle-round uk-animation-slide-right-medium"></div>
                 </div>
             </div>
-            <div class="uk-container container-relative">
+            <div class="container container-relative">
                 <img class="main-first-screen__image" src="../../../public/assets/img/content/first-screen-img.png" alt="" uk-parallax="start: 30vh; end: 30vh; y: 70; easing: 0;">
                 <div class="main-first-screen__inner">
                     <h1 class="main-title">Большой спектр ветеренарных услуг</h1>
@@ -82,7 +82,7 @@
         </section>
 
         <section class="main-advantage">
-            <div class="uk-container container-relative">
+            <div class="container container-relative">
                 <div class="vet-card-list">
                     <div class="vet-card">
                         <img src="../../../public/assets/img/icon/main-pre-1.svg" class="vet-card__icon" alt=""/>
@@ -98,6 +98,33 @@
                         <img src="../../../public/assets/img/icon/main-pre-3.svg" class="vet-card__icon" alt=""/>
                         <div class="vet-card__title">Доступные цены</div>
                         <div class="vet-card__text">Мы стараемся делать наши достумными всем</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="main-form">
+            <div class="container container-relative">
+                <div class="main-form_inner row align-items-center gx-5">
+                    <div class="laps-bg" uk-parallax="bgy: -50"></div>
+                    <div class="main-form_text-inner col-7">
+                        <h2>Запишитесь на прием прямо сейчас</h2>
+                        <p>Мы вам перезвоним и уточним точное время вашего посещения.</p>
+                    </div>
+                    <div class="main-form-inputs col-5">
+                        <form class="vet-form g-3">
+                            <div class="form-input">
+                                <label for="first_name">Имя</label>
+                                <input type="text" class="form-control" id="first_name" value="">
+                            </div>
+
+                            <div class="form-input">
+                                <label for="last_name">Фамилия</label>
+                                <input type="text" class="form-control" id="last_name" value="">
+                            </div>
+
+                            <button type="submit" class="btn btn-primary mb-3">Записаться</button>
+                        </form>
                     </div>
                 </div>
             </div>
