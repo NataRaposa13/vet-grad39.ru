@@ -91,3 +91,30 @@ a {
 .vet-button-green:hover {
     background: var(--main-blue-hover);
 }
+
+
+.top-blue-blob {
+    transition: height 0.6s ease;
+    width: 778px;
+    height: 721px;
+    position: absolute;
+    background: url('../img/blue-blob.svg') no-repeat;
+    background-size: contain;
+    background-position: center;
+    top: -509px;
+    left: -270px;
+    z-index: 2;
+}
+
+.top-orange-blob {
+    transition: height 0.5s ease;
+    width: 747px;
+    height: 721px;
+    position: absolute;
+    background: url('../img/orange-blob.svg') no-repeat;
+    background-size: contain;
+    background-position: center;
+    top: -489px;
+    left: -253px;
+    z-index: 1;
+}
