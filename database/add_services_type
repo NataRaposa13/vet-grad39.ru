@@ -1,0 +1,5 @@
+insert into ServiceType (title, alias)
+values ('прием врачей', 'priyem-vrachey'),
+       ('анализы', 'analizy'),
+       ('справки', 'spravki'),
+       ('прививки', 'privivki');
