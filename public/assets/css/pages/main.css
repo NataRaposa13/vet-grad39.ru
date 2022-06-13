@@ -1,0 +1,235 @@
+@import '../modules/header.css';
+
+body {
+    font-family: 'Bellota Text', cursive;
+    font-weight: 400;
+    height: 200vh;
+}
+
+.container-relative {
+    position: relative;
+}
+
+.main-page {
+    position: relative;
+}
+
+.logo:hover {
+    color: var(--light-green);
+}
+
+.main-first-screen {
+    position: relative;
+    min-height: 750px;
+    height: 95vh;
+    background: var(--light-green);
+}
+
+.main-first-screen__inner {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.main-title {
+    font-size: var(--title);
+    width: 600px;
+    display: block;
+}
+
+.main-first-screen__image {
+    position: absolute;
+    bottom: -5%;
+    right: -35%;
+    height: 83%;
+    width: auto;
+    object-fit: contain;
+    pointer-events: none;
+}
+
+.blob-wrap {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}
+
+.blue-blob_animated {
+    width: 706px;
+    height: 594px;
+    position: absolute;
+    background: url('../../img/blob-static.svg') no-repeat;
+    background-size: contain;
+    background-position: center;
+    bottom: -79px;
+    right: -389px;
+}
+
+.top-blue-blob {
+    transition: height 0.6s ease;
+    width: 778px;
+    height: 721px;
+    position: absolute;
+    background: url('../../img/blue-blob.svg') no-repeat;
+    background-size: contain;
+    background-position: center;
+    top: -509px;
+    left: -270px;
+}
+
+.top-orange-blob {
+    transition: height 0.5s ease;
+    width: 747px;
+    height: 721px;
+    position: absolute;
+    background: url('../../img/orange-blob.svg') no-repeat;
+    background-size: contain;
+    background-position: center;
+    top: -489px;
+    left: -253px;
+}
+
+.top-blue-blob.logo-hovered {
+    height: 732px;
+}
+
+.top-orange-blob.logo-hovered {
+    height: 750px;
+}
+
+.syrcle-grid {
+    transition: height 0.5s ease;
+    width: 182px;
+    height: 177px;
+    position: absolute;
+    color: var(--light-orange);
+    left: -91px;
+    bottom: -40px;
+}
+
+
+
+
+
+
+.main-advantage {
+    padding: 150px 0 0;
+}
+
+
+.vet-card-list {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    padding: -20px;
+}
+
+.vet-card {
+    text-align: center;
+    position: relative;
+    padding: 25px 35px;
+    background: var(--light-green);
+    border-radius: 25px;
+    max-width: 33%;
+    width: 100%;
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+    box-shadow: 0px 4px 12px -5px rgba(0, 0, 0, 0.25);
+    z-index: 3;
+}
+.vet-card::before {
+    content: "";
+    display: block;
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    background: var(--light-green);
+    position: absolute;
+    top: -85px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    z-index: -1;
+}
+
+.vet-card__icon {
+    height: 75px;
+    width: auto;
+    position: absolute;
+    top: -60px;
+    left: 50%;
+    transform: translateX(-50%);
+    pointer-events: none;
+}
+
+.vet-card__title {
+    color: var(--main-blue);
+    font-size: var(--text-xxl);
+    font-weight: 700;
+
+    margin-top: 5px;
+}
+
+.vet-card__text {
+    margin-top: 10px;
+    color: var(--gray);
+    /*font-size: var(--text-xxl);*/
+}
+
+.main-form-inputs {
+    background: rgba(251, 251, 251, 0.8);
+    border-radius: 15px;
+    padding: 40px 50px;
+}
+
+.main-form_inner {
+    display: flex;
+    align-items: center;
+}
+
+.main-form_inner {
+    padding: 70px 0;
+    position: relative;
+    z-index: 10;
+}
+
+.laps-bg {
+    top: 0;
+    left: 0;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: url("../../img/laps.png") no-repeat;
+    background-position: center;
+    background-size: cover;
+    z-index: -1;
+}
+
+.laps-bg:before {
+    content: '';
+    width: 100%;
+    height: 20%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    background: linear-gradient(180deg, #ffffff 0%, rgba(255, 255, 255, 0) 100%);
+}
+
+.laps-bg:after {
+    content: '';
+    width: 100%;
+    height: 20%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: block;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #ffffff 100%);
+}

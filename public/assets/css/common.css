@@ -1,0 +1,93 @@
+@import './libs/uikit.css';
+@import './libs/uikit-rlt.css';
+@import './modules/form.css';
+
+body {
+    /* Color variables */
+    --main-blue: #469797;
+    --main-orange: #FF891B;
+    --main-blue-hover: #3D8080;
+    --main-orange-hover: #cd6e17;
+
+    --light-blue: #57A9A9;
+
+    --light-orange: #FBE1C8;
+    --light-green: #FAFCFB;
+
+    --black: #000000;
+    --gray: #5C5C5C;
+    --white: #ffffff;
+
+    --title: 60px;
+
+    --text-s: 14px;
+    --text-xs: 13px;
+    --text-m: 15px;
+    --text-l: 16px;
+    --text-xl: 18px;
+    --text-xxl: 20px;
+
+    color: var(--black);
+
+    overflow-x: hidden;
+}
+
+.container {
+    height: 100%;
+}
+
+
+a {
+    transition: color 0.15s ease;
+}
+
+.uk-navbar-nav {
+    align-items: center;
+}
+
+.uk-navbar-dropdown {
+    border-radius: 5px;
+}
+
+.uk-navbar-dropdown a {
+    color: inherit !important;
+}
+
+.uk-navbar-container a {
+    color: inherit !important;
+}
+
+.uk-navbar-container a:hover {
+    color: inherit;
+    opacity: 0.9;
+}
+
+.uk-navbar-container [uk-icon] {
+    transition: transform 0.2s ease;
+}
+
+.uk-navbar-container [aria-expanded="true"] [uk-icon^="icon: chevron-down"] {
+    transform: rotate(180deg);
+}
+
+.uk-container {
+    height: 100%;
+}
+
+.uk-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.vet-button {
+    border-radius: 5px;
+}
+
+.vet-button-green {
+    background: var(--main-blue);
+}
+
+.vet-button-green:hover {
+    background: var(--main-blue-hover);
+}
