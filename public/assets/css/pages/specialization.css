@@ -21,20 +21,21 @@ body {
 }
 
 
+
 .vet-service__list {
     display: flex;
     flex-wrap: wrap;
 }
 
 .vet-service__item {
-    width: 31%;
+    width: 29.75%;
     display: flex;
     flex-flow: column;
-    justify-content: center;
+    justify-content: space-between;
     padding: 20px;
     border-radius: 10px;
     background: #C9E1DD;
-    margin: 10px;
+    margin: 20px;
 }
 
 .vet-service__name {
