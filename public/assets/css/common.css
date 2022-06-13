@@ -36,6 +36,10 @@ body {
     height: 100%;
 }
 
+.container-relative {
+    position: relative;
+}
+
 
 a {
     transition: color 0.15s ease;
@@ -117,4 +121,28 @@ a {
     top: -489px;
     left: -253px;
     z-index: 1;
+}
+
+.blob-wrap {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}
+
+.btn-vet-button {
+    --bs-btn-font-weight: 600;
+    --bs-btn-color: var(--white);
+    --bs-btn-bg: var(--main-blue);
+    --bs-btn-border-color: var(--main-blue);
+    --bs-btn-border-radius: .5rem;
+    --bs-btn-hover-color: var(--white);
+    --bs-btn-hover-bg: var(--main-blue-hover);
+    --bs-btn-hover-border-color: #{shade-color($bd-violet, 10%)};
+    --bs-btn-focus-shadow-rgb: var(--main-blue-hover);
+    --bs-btn-active-color: var(--main-blue-hover);
+    --bs-btn-active-bg: var(--main-blue-hover);
+    --bs-btn-active-border-color: var(--main-blue-hover);
 }

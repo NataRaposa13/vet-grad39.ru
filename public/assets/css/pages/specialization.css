@@ -1,0 +1,49 @@
+body {
+    font-family: 'Bellota Text', cursive;
+    font-weight: 400;
+    height: 200vh;
+    background: url("../../img/laps-orange.png");
+    background-repeat: repeat-y;
+    background-size: 100% auto;
+    height: 5000px;
+}
+
+.vet-service-page {
+
+}
+
+.vet-service-page__inner {
+    padding: 250px 0;
+}
+
+.vet-service-page__title {
+    margin-bottom: 50px;
+}
+
+
+.vet-service__list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.vet-service__item {
+    width: 31%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    padding: 20px;
+    border-radius: 10px;
+    background: #C9E1DD;
+    margin: 10px;
+}
+
+.vet-service__name {
+    font-size: 20px;
+}
+
+.vet-service__item-footer {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
