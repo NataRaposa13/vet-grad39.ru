@@ -50,6 +50,24 @@
                 </div>
             </div>
         </section>
+
+        <section class="main-contacts">
+            <div class="container container-relative">
+                <div class="main-contacts__inner">
+                    <div class="contacts-block">
+                        <div class="contacts-block__title">Контакты</div>
+                        <div class="contacts-block__list">
+                            <div class="contacts-block__item">... телефон ...</div>
+                            <div class="contacts-block__item">... почта ...</div>
+                            <div class="contacts-block__item">... адрес клиники ...</div>
+                            <div class="contacts-block__item">... расписание ...</div>
+                            <div class="contacts-block__item">... адрес клиники...</div>
+                            <div class="contacts-block__item">... расписание ...</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </div>
 
     <script type="module" src="../../../public/assets/js/index.js"></script>
