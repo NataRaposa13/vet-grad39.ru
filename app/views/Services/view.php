@@ -14,11 +14,7 @@
     <section class="vet-services vet-card-page">
         <div class="container">
             <div class="vet-card-page__inner">
-                <h1 class="vet-card-page__title">
-                    <? if (!empty($services)): ?>
-                        <?= $services['title'] ?>
-                    <? endif; ?>
-                </h1>
+                <h1 class="vet-card-page__title"></h1>
 
                 <div class="vet-card__list">
                     <? if (!empty($services)): ?>
@@ -26,7 +22,7 @@
                             <? foreach ($services as $doctor): ?>
                                 <? if ($doctor['id']): ?>
                                     <div class="vet-card__item">
-                                        <img src="../../../public/assets/img/spetiality/<?= $doctor['id'] ?>.svg" alt="" class="vet-service__item-icon">
+                                        <img src="../../../public/assets/img/spetiality/<?= $doctor['id'] ?>.svg" alt="" class="vet-card__item-icon">
                                         <div class="vet-card__item-inner">
                                             <div class="vet-card__name">
                                                 <?= $doctor['title'] ?>
