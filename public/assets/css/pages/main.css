@@ -171,3 +171,30 @@ body {
     color: var(--gray);
     /*font-size: var(--text-xxl);*/
 }
+
+
+.main-contacts {
+
+}
+
+.main-contacts__inner {
+    width: 100%;
+    height: 100%;
+
+}
+
+ .contacts-block {
+
+}
+
+ .contacts-block__title {
+
+}
+
+.contacts-block__list {
+
+}
+
+.contacts-block__item {
+
+}

@@ -13,6 +13,7 @@ body {
 
     --light-orange: #FBE1C8;
     --light-green: #FAFCFB;
+    --light-green-gradient: linear-gradient(180deg, #FFFFFF 11.54%, #C9E1DD 100%);
 
     --black: #000000;
     --gray: #5C5C5C;

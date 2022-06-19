@@ -34,7 +34,8 @@ body {
     justify-content: space-between;
     padding: 20px;
     border-radius: 10px;
-    background: #C9E1DD;
+    background: var(--light-green-gradient);
+    border: 1px solid rgba(0, 133, 111, 0.25);
     margin: 20px;
 }
 

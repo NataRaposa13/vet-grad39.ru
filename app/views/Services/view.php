@@ -7,86 +7,68 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<link rel="stylesheet" href="../../../public/assets/css/pages/specialization.css">
 
-	<title>Стоматология</title>
+    <!-- TODO -->
+	<title></title>
 </head>
 <body>
 <div class="vet-service-page">
 	<div class="container">
 		<div class="vet-service-page__inner">
 			<h1 class="vet-service-page__title">
-				Стоматология
+                <!-- TODO -->
 			</h1>
 
 			<div class="vet-service__list">
-				<div class="vet-service__item">
-					<div class="vet-service__name">
-						Лечение кариеса
-					</div>
+                <? if (!empty($services)): ?>
+                    <? if $services['is_doctors']: ?>
+                        <? foreach ($service as $services): ?>
+                            <div class="vet-service__item">
+                                <div class="vet-service__name">
+                                    <?= $service['title'] ?>
+                                </div>
 
-					<div class="vet-service__text">
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam libero nunc, imperdiet eget
-					</div>
-
-					<div class="vet-service__item-footer">
-						<button type="button" class="btn btn-primary btn-sm btn-vet-button">Записаться</button>
-
-						<div class="vet-service__price">
-							500 руб.
-						</div>
-
-					</div>
-				</div>
-
-				<div class="vet-service__item">
-					<div class="vet-service__name">
-						Лечение кариеса
-					</div>
+                                <div class="vet-service__text">
+                                    <?= $service['description'] ?>
+                                </div>
 
 
+                                <div class="vet-service__item-footer">
+                                    <button type="button" class="btn btn-primary btn-sm btn-vet-button">Записаться</button>
 
-					<div class="vet-service__item-footer">
-						<button type="button" class="btn btn-primary btn-sm btn-vet-button">Записаться</button>
+                                    <? if (!empty($services['cost'])): ?>
+                                        <div class="vet-service__price">
+                                            <?= $service['cost'] ?> руб.
+                                        </div>
+                                    <? endif; ?>
+                                </div>
+                            </div>
+                        <? endforeach; ?>
+                    <? else: ?>
+                        <!-- TODO -->
+                        <? foreach ($doctor as $services): ?>
+                            <div class="vet-service__item">
+                                <div class="vet-service__name">
+                                    <?= $service['title'] ?>
+                                </div>
 
-						<div class="vet-service__price">
-							500 руб.
-						</div>
-
-					</div>
-				</div>
-
-				<div class="vet-service__item">
-					<div class="vet-service__name">
-						Лечение кариеса
-					</div>
-
-
-
-					<div class="vet-service__item-footer">
-						<button type="button" class="btn btn-primary btn-sm btn-vet-button">Записаться</button>
-
-						<div class="vet-service__price">
-							500 руб.
-						</div>
-
-					</div>
-				</div>
-
-				<div class="vet-service__item">
-					<div class="vet-service__name">
-						Лечение кариеса
-					</div>
+                                <div class="vet-service__text">
+                                    <?= $service['description'] ?>
+                                </div>
 
 
+                                <div class="vet-service__item-footer">
+                                    <button type="button" class="btn btn-primary btn-sm btn-vet-button">Записаться</button>
 
-					<div class="vet-service__item-footer">
-						<button type="button" class="btn btn-primary btn-sm btn-vet-button">Записаться</button>
-
-						<div class="vet-service__price">
-							500 руб.
-						</div>
-
-					</div>
-				</div>
+                                    <? if (!empty($services['cost'])): ?>
+                                        <div class="vet-service__price">
+                                            <?= $service['cost'] ?> руб.
+                                        </div>
+                                    <? endif; ?>
+                                </div>
+                            </div>
+                        <? endforeach; ?>
+                    <? endif; ?>
+                <? endif; ?>
 			</div>
 		</div>
 	</div>
