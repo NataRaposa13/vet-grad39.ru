@@ -11,37 +11,36 @@
 	<title></title>
 </head>
 <body uk-parallax="bgy: -140">
-    <section class="vet-service-page">
+    <section class="vet-services vet-card-page">
         <div class="container">
-            <div class="vet-service-page__inner">
-                <h1 class="vet-service-page__title">
+            <div class="vet-card-page__inner">
+                <h1 class="vet-card-page__title">
                     <? if (!empty($services)): ?>
                         <?= $services['title'] ?>
                     <? endif; ?>
                 </h1>
 
-
-                <div class="vet-service__list">
+                <div class="vet-card__list">
                     <? if (!empty($services)): ?>
                         <? if ($services['is_doctors']): ?>
                             <? foreach (array_values($services) as $service): ?>
                                 <? if (is_object($service)): ?>
-                                    <div class="vet-service__item">
-                                        <img src="../../../public/assets/img/spetiality/<?= $service['id'] ?>.svg" alt="" class="vet-service__item-icon">
-                                        <div class="vet-service__item-inner">
-                                            <div class="vet-service__name">
+                                    <div class="vet-card__item">
+                                        <img src="../../../public/assets/img/spetiality/<?= $service['id'] ?>.svg" alt="" class="vet-card__item-icon">
+                                        <div class="vet-card__item-inner">
+                                            <div class="vet-card__name">
                                                 <?= $service['title'] ?>
                                             </div>
 
-                                            <div class="vet-service__text">
+                                            <div class="vet-card__text">
                                                 <?= $service['description'] ?>
                                             </div>
 
-                                            <div class="vet-service__item-footer">
+                                            <div class="vet-card__item-footer">
                                                 <button type="button" class="btn btn-primary btn-sm btn-vet-button">Записаться</button>
 
                                                 <? if (!empty($service['cost'])): ?>
-                                                    <div class="vet-service__price">
+                                                    <div class="vet-card__price">
                                                         <?= $service['cost'] ?> руб.
                                                     </div>
                                                 <? endif; ?>
@@ -52,21 +51,21 @@
                             <? endforeach; ?>
                         <? else: ?>
                             <? foreach ($services as $doctor): ?>
-                                <div class="vet-service__item">
-                                    <div class="vet-service__name">
+                                <div class="vet-card__item">
+                                    <div class="vet-card__name">
                                         <?= $service['title'] ?>
                                     </div>
 
-                                    <div class="vet-service__text">
+                                    <div class="vet-card__text">
                                         <?= $service['description'] ?>
                                     </div>
 
 
-                                    <div class="vet-service__item-footer">
+                                    <div class="vet-card__item-footer">
                                         <button type="button" class="btn btn-primary btn-sm btn-vet-button">Записаться</button>
 
                                         <? if (!empty($services['cost'])): ?>
-                                            <div class="vet-service__price">
+                                            <div class="vet-card__price">
                                                 <?= $service['cost'] ?> руб.
                                             </div>
                                         <? endif; ?>
