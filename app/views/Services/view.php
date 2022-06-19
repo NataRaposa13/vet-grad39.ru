@@ -15,10 +15,9 @@
         <div class="container">
             <div class="vet-card-page__inner">
                 <h1 class="vet-card-page__title"></h1>
-
-                <div class="vet-card__list">
-                    <? if (!empty($services)): ?>
-                        <? if ($isDoctors): ?>
+                <? if (!empty($services)): ?>
+                    <? if ($isDoctors): ?>
+                        <div class="vet-card__list cols-3">
                             <? foreach ($services as $doctor): ?>
                                 <? if ($doctor['id']): ?>
                                     <div class="vet-card__item">
@@ -45,9 +44,11 @@
                                     </div>
                                 <? endif; ?>
                             <? endforeach; ?>
-                        <? else: ?>
+                        </div>
+                    <? else: ?>
+                        <div class="vet-card__list cols-2">
                             <? foreach ($services as $service): ?>
-                                <div class="vet-card__item">
+                                <div class="vet-card__item column align-left justify-between">
                                     <div class="vet-card__name">
                                         <?= $service['title'] ?>
                                     </div>
@@ -58,7 +59,7 @@
 
 
                                     <div class="vet-card__item-footer">
-                                        <button type="button" class="btn btn-primary btn-sm btn-vet-button">Записаться</button>
+                                        <button type="button" class="btn btn-primary btn-m btn-vet-button">Записаться</button>
 
                                         <? if (!empty($service['cost'])): ?>
                                             <div class="vet-card__price">
@@ -68,9 +69,9 @@
                                     </div>
                                 </div>
                             <? endforeach; ?>
-                        <? endif; ?>
+                        </div>
                     <? endif; ?>
-                </div>
+                <? endif; ?>
             </div>
         </div>
     </section>

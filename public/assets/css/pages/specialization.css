@@ -23,8 +23,16 @@ body {
     flex-wrap: wrap;
 }
 
-.vet-card__item {
+.vet-card__list.cols-2 .vet-card__item  {
+    width: 46.75%;
+}
+
+.vet-card__list.cols-3 .vet-card__item  {
     width: 29.75%;
+}
+
+.vet-card__item {
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -33,6 +41,18 @@ body {
     background: var(--light-green-gradient);
     border: 1px solid rgba(0, 133, 111, 0.25);
     margin: 20px;
+}
+
+.vet-card__item.align-left {
+    align-items: start !important;
+}
+
+.vet-card__item.align-center {
+    align-items: center !important;
+}
+
+.vet-card__item.justify-between {
+    justify-content: space-between !important;
 }
 
 .vet-card__item.pointer {
@@ -78,10 +98,15 @@ body {
 }
 
 .vet-card__item-footer {
+    width: 100%;
     margin-top: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.vet-card__price {
+    font-weight: 700;
 }
 
 .vet-card__img {

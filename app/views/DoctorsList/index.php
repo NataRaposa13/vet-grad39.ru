@@ -19,7 +19,7 @@
                     <? if (!empty($doctors)): ?>
                         <? foreach (array_values($doctors) as $doctor): ?>
                             <? if (is_object($doctor)): ?>
-                                <div class="vet-card__item column pointer">
+                                <div class="vet-card__item column pointer align-center">
                                     <div class="vet-card__img">
                                         <img src="../../../public/assets/img/doctor/<?= $doctor['id'] ?>.png" alt="<?= $doctor['name'] ?>">
                                     </div>

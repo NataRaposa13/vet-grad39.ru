@@ -16,11 +16,6 @@ export default class Animations {
             // TODO pashtet: может сделать этот код универсальным и не привязываться к лого
             $('[logo-hover-animate]').addClass('logo-hovered');
         });
-        [{
-            name: 'first_name',
-            value: 'djksjdks',
-            hidden: true
-        }]
 
         $logo.on('mouseleave', () => {
             $('[logo-hover-animate]').removeClass('logo-hovered');
