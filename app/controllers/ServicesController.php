@@ -22,7 +22,7 @@ class ServicesController extends AppController
     						INNER JOIN Doctor_Service ON Services.id = Doctor_Service.service_id
 							INNER JOIN Doctor_Speciality ON Doctor_Service.doctor_id = Doctor_Speciality.doctor_id
 						WHERE Doctor_Speciality.doctor_id = ? and Services.status = 1
-						', [ $service['id']] );
+					', [ $service['id']] );
 			}
 			$isDoctors = true;
 		} else {

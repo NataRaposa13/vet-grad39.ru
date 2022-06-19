@@ -15,7 +15,9 @@
         <div class="container">
             <div class="vet-service-page__inner">
                 <h1 class="vet-service-page__title">
-                    <!-- TODO -->
+                    <? if (!empty($services)): ?>
+                        <?= $services['title'] ?>
+                    <? endif; ?>
                 </h1>
 
 
