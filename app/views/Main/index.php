@@ -51,18 +51,30 @@
             </div>
         </section>
 
-        <section class="main-contacts">
-            <div class="container container-relative">
+        <section class="main-contacts" id="contacts">
+            <div class="container">
                 <div class="main-contacts__inner">
+                <iframe class="map-iframe" src="https://yandex.ru/map-widget/v1/?um=constructor%3Aa16d905dd007c8d2caf12c3c04ddec57d3f8caf2fa6ac99616796c6e555f2a20&amp;source=constructor" width="1060" height="615" frameborder="0"></iframe>
                     <div class="contacts-block">
                         <div class="contacts-block__title">Контакты</div>
                         <div class="contacts-block__list">
-                            <div class="contacts-block__item">... телефон ...</div>
-                            <div class="contacts-block__item">... почта ...</div>
-                            <div class="contacts-block__item">... адрес клиники ...</div>
-                            <div class="contacts-block__item">... расписание ...</div>
-                            <div class="contacts-block__item">... адрес клиники...</div>
-                            <div class="contacts-block__item">... расписание ...</div>
+                            <div class="contacts-block__item">
+                                <span uk-icon="icon: receiver"></span>
+                                <span class="contacts-block__item-name">Телефон: </span>
+                                <span>+ 7 (952) 700-79-67</span>
+                            </div>
+                            <div class="contacts-block__item">
+                                <span uk-icon="icon: mail"></span>
+                                <span class="contacts-block__item-name">Почта: </span>
+                                <span>vetgrad39@info.ru</span>
+                            </div>
+                            <div class="contacts-block__item">
+                                <span uk-icon="icon: location"></span>
+                                <span class="contacts-block__item-name">Адреса клиник: </span>
+                                <div class="d-flex">
+
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

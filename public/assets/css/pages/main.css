@@ -107,7 +107,7 @@ body {
 
 
 .main-advantage {
-    padding: 150px 0 0;
+    padding: 150px 0 80px;
 }
 
 
@@ -174,27 +174,52 @@ body {
 
 
 .main-contacts {
+    height: 570px;
 
 }
 
 .main-contacts__inner {
     width: 100%;
     height: 100%;
-
+    padding: 10%;
 }
 
- .contacts-block {
+.contacts-block {
+    height: 100%;
+    width: 50%;
 
+    background: rgba(0, 133, 111, 0.72);
+    backdrop-filter: blur(29px);
+    /* Note: backdrop-filter has minimal browser support */
+
+    border-radius: 15px;
+    color: var(--white);
+    padding: 43px 46px;
 }
 
  .contacts-block__title {
-
+     font-size: 40px;
 }
 
 .contacts-block__list {
 
 }
 
-.contacts-block__item {
+.contacts-block__item-name {
+    font-size: 1.05rem;
+    font-weight: 700;
+}
 
+.contacts-block__item {
+    margin: 5px 0;
+}
+
+.contacts-block__item span {
+   vertical-align: middle;
+}
+
+.map-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
 }
