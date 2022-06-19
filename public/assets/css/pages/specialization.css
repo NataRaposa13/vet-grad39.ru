@@ -6,56 +6,103 @@ body {
     background-size: 100% auto;
 }
 
-.vet-service-page {
-
+.vet-doctors .vet-card-page__title{
+    margin-bottom: 80px;
 }
 
-.vet-service-page__inner {
+.vet-card-page__inner {
     padding: 250px 0;
 }
 
-.vet-service-page__title {
+.vet-card-page__title {
     margin-bottom: 50px;
 }
 
-
-
-.vet-service__list {
+.vet-card__list {
     display: flex;
     flex-wrap: wrap;
 }
 
-.vet-service__item {
+.vet-card__item {
     width: 29.75%;
     display: flex;
     align-items: center;
     justify-content: space-around;
-    padding: 20px;
+    padding: 32px;
     border-radius: 10px;
     background: var(--light-green-gradient);
     border: 1px solid rgba(0, 133, 111, 0.25);
     margin: 20px;
 }
 
-.vet-service__item-inner {
+.vet-card__item.pointer {
+    transition: all 0.2s ease;
+    pointer-events: all;
+    cursor: pointer;
+}
+
+.vet-card__item.pointer:hover {
+    opacity: 0.9;
+}
+
+.vet-card__item.pointer:hover .vet-card__img {
+    transform: translateY(-5px);
+}
+
+.vet-card__item.pointer:hover .vet-card__name {
+    color: var(--main-blue);
+}
+
+.vet-card__item.column {
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.vet-card__item-inner {
     display: flex;
     flex-flow: column;
     justify-content: space-between;
 }
 
-.vet-service__item-icon {
+.vet-card__item-icon {
     width: 82px;
     height: auto;
     pointer-events: none;
 }
 
-.vet-service__name {
+.vet-card__name {
+    transition: all 0.2s ease;
+    font-weight: 700;
     font-size: 20px;
 }
 
-.vet-service__item-footer {
+.vet-card__item-footer {
     margin-top: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.vet-card__img {
+    transition: all 0.4s ease;
+    position: relative;
+    top: -80px;
+    margin-bottom: -65px;
+}
+
+.vet-card__img:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 27%;
+    width: 100%;
+    display: block;
+    background: linear-gradient(180deg, rgba(250, 252, 251, 0) 0%, #E1EEEC 88.54%);;
+}
+
+.vet-card__img img {
+    max-height: 296px;
+    width: auto;
 }

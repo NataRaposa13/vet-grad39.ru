@@ -14,6 +14,7 @@ body {
     --light-orange: #FBE1C8;
     --light-green: #FAFCFB;
     --light-green-gradient: linear-gradient(180deg, #FFFFFF 11.54%, #C9E1DD 100%);
+    --light-green-gradient-hover: linear-gradient(180deg, #e1f6f1 11.54%, #C9E1DD 100%);
 
     --black: #000000;
     --gray: #5C5C5C;
@@ -166,4 +167,10 @@ a {
     --bs-btn-active-color: var(--light-orange);
     --bs-btn-active-bg: var(--main-orange-hover);
     --bs-btn-active-border-color: var(--main-orange-hover);
+}
+
+.btn-m {
+    --bs-btn-padding-y: .5rem;
+    --bs-btn-padding-x: .6rem;
+    --bs-btn-font-size: .7rem;
 }
