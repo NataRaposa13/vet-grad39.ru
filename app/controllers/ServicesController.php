@@ -14,6 +14,7 @@ class ServicesController extends AppController
 
 		if ($alias === 'priyem-vrachey') {
 			$services = R::find('DoctorSpeciality');
+
 			foreach ($services as $service) {
 				$service['services'] = R::findMulti( 'Doctor_Speciality, Doctor_Service, Services',
 					'
@@ -28,6 +29,8 @@ class ServicesController extends AppController
 			$services = R::find('Services', 'type_id = ?', [(int)$serviceTypes]);
 			$services['is_doctors'] = false;
 		}
+
+        $services['title'] = $serviceTypes[(int)$serviceTypes]['title'];
 
 		$this->set(compact('serviceTypes', 'services'));
 	}

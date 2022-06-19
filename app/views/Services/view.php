@@ -15,7 +15,9 @@
         <div class="container">
             <div class="vet-service-page__inner">
                 <h1 class="vet-service-page__title">
-                    <!-- TODO -->
+                    <? if (!empty($services)): ?>
+                        <?= $services['title'] ?>
+                    <? endif; ?>
                 </h1>
 
 
@@ -23,7 +25,7 @@
                     <? if (!empty($services)): ?>
                         <? if ($services['is_doctors']): ?>
                             <? foreach (array_values($services) as $service): ?>
-                                <? if ($service['id']): ?>
+                                <? if (is_object($service)): ?>
                                     <div class="vet-service__item">
                                         <img src="../../../public/assets/img/spetiality/<?= $service['id'] ?>.svg" alt="" class="vet-service__item-icon">
                                         <div class="vet-service__item-inner">
