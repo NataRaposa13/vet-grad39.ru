@@ -21,7 +21,7 @@
 			<div class="vet-service__list">
                 <? if (!empty($services)): ?>
                     <? if $services['is_doctors']: ?>
-                        <? foreach ($service as $services): ?>
+                        <? foreach ($services as $service): ?>
                             <div class="vet-service__item">
                                 <div class="vet-service__name">
                                     <?= $service['title'] ?>
@@ -35,7 +35,7 @@
                                 <div class="vet-service__item-footer">
                                     <button type="button" class="btn btn-primary btn-sm btn-vet-button">Записаться</button>
 
-                                    <? if (!empty($services['cost'])): ?>
+                                    <? if (!empty($service['cost'])): ?>
                                         <div class="vet-service__price">
                                             <?= $service['cost'] ?> руб.
                                         </div>
