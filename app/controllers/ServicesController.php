@@ -8,9 +8,10 @@ class ServicesController extends AppController
 {
 	public function viewAction()
 	{
-		$serviceTypes = R::find( 'ServiceType');
+		$serviceTypes = R::find('ServiceType');
 
 		$alias = $this->route['alias'];
+		$serviceType = R::findOne('ServiceType', 'alias = ?', [$alias]);
 
 		if ($alias === 'priyem-vrachey') {
 			$services = R::find('DoctorSpeciality');
@@ -23,12 +24,12 @@ class ServicesController extends AppController
 						WHERE Doctor_Speciality.doctor_id = ? and Services.status = 1
 						', [ $service['id']] );
 			}
-			$services['is_doctors'] = true;
+			$isDoctors = true;
 		} else {
-			$services = R::find('Services', 'type_id = ?', [(int)$serviceTypes]);
-			$services['is_doctors'] = false;
+			$services = R::find('Services', 'type_id = ?', [$serviceType['id']]);
+			$isDoctors = false;
 		}
 
-		$this->set(compact('serviceTypes', 'services'));
+		$this->set(compact('serviceTypes', 'services', 'isDoctors'));
 	}
 }
