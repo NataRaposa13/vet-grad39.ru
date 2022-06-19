@@ -11,7 +11,7 @@
 	<title></title>
 </head>
 <body>
-<div class="vet-service-page">
+<section class="vet-service-page">
 	<div class="container">
 		<div class="vet-service-page__inner">
 			<h1 class="vet-service-page__title">
@@ -73,7 +73,7 @@
 			</div>
 		</div>
 	</div>
-</div>
+</section>
 </body>
 </html>
 
