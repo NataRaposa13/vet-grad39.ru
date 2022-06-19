@@ -28,13 +28,25 @@ body {
 .vet-service__item {
     width: 29.75%;
     display: flex;
-    flex-flow: column;
-    justify-content: space-between;
+    align-items: center;
+    justify-content: space-around;
     padding: 20px;
     border-radius: 10px;
     background: var(--light-green-gradient);
     border: 1px solid rgba(0, 133, 111, 0.25);
     margin: 20px;
+}
+
+.vet-service__item-inner {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+}
+
+.vet-service__item-icon {
+    width: 82px;
+    height: auto;
+    pointer-events: none;
 }
 
 .vet-service__name {

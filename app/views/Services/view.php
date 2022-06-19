@@ -25,22 +25,25 @@
                             <? foreach (array_values($services) as $service): ?>
                                 <? if ($service['id']): ?>
                                     <div class="vet-service__item">
-                                        <div class="vet-service__name">
-                                            <?= $service['title'] ?>
-                                        </div>
+                                        <img src="../../../public/assets/img/spetiality/<?= $service['id'] ?>.svg" alt="" class="vet-service__item-icon">
+                                        <div class="vet-service__item-inner">
+                                            <div class="vet-service__name">
+                                                <?= $service['title'] ?>
+                                            </div>
 
-                                        <div class="vet-service__text">
-                                            <?= $service['description'] ?>
-                                        </div>
+                                            <div class="vet-service__text">
+                                                <?= $service['description'] ?>
+                                            </div>
 
-                                        <div class="vet-service__item-footer">
-                                            <button type="button" class="btn btn-primary btn-sm btn-vet-button">Записаться</button>
+                                            <div class="vet-service__item-footer">
+                                                <button type="button" class="btn btn-primary btn-sm btn-vet-button">Записаться</button>
 
-                                            <? if (!empty($service['cost'])): ?>
-                                                <div class="vet-service__price">
-                                                    <?= $service['cost'] ?> руб.
-                                                </div>
-                                            <? endif; ?>
+                                                <? if (!empty($service['cost'])): ?>
+                                                    <div class="vet-service__price">
+                                                        <?= $service['cost'] ?> руб.
+                                                    </div>
+                                                <? endif; ?>
+                                            </div>
                                         </div>
                                     </div>
                                 <? endif; ?>
