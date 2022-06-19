@@ -10,7 +10,7 @@
     <!-- TODO -->
 	<title></title>
 </head>
-<body>
+<body uk-parallax="bgy: -140">
     <section class="vet-service-page">
         <div class="container">
             <div class="vet-service-page__inner">
