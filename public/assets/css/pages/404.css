@@ -1,0 +1,50 @@
+.vet-404 {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    font-family: 'Jura', 'Comfortaa', sans-serif;
+
+}
+
+.vet-404-title {
+    font-size: 250px;
+    line-height: 1;
+    font-weight: 700;
+    color: var(--main-blue);
+    position: relative;
+}
+
+.vet-404-title:before {
+    content: '';
+    position: absolute;
+    top: 52%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 53px;
+    height: 53px;
+    background-color: #ffffff;
+    background-image: url('../../img/icon/logo-orange-icon.svg');
+}
+
+
+.vet-404-text {
+    font-size: 70px;
+    font-weight: 700;
+    color: var(--main-blue);
+}
+
+
+.vet-404-button {
+    margin-top: 20px;
+}
+
+.vet-404-animate-laps {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 627px;
+    height: auto;
+    pointer-events: none;
+}

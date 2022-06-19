@@ -70,6 +70,8 @@
         </section>
     </div>
 
+
+
     <script type="module" src="../../../public/assets/js/index.js"></script>
 </body>
 </html>
