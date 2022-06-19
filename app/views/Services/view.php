@@ -21,26 +21,26 @@
 
                 <div class="vet-service__list">
                     <? if (!empty($services)): ?>
-                        <? if ($services['is_doctors']): ?>
-                            <? foreach (array_values($services) as $service): ?>
-                                <? if ($service['id']): ?>
+                        <? if ($isDoctors): ?>
+                            <? foreach ($services as $doctor): ?>
+                                <? if ($doctor['id']): ?>
                                     <div class="vet-service__item">
-                                        <img src="../../../public/assets/img/spetiality/<?= $service['id'] ?>.svg" alt="" class="vet-service__item-icon">
+                                        <img src="../../../public/assets/img/spetiality/<?= $doctor['id'] ?>.svg" alt="" class="vet-service__item-icon">
                                         <div class="vet-service__item-inner">
                                             <div class="vet-service__name">
-                                                <?= $service['title'] ?>
+                                                <?= $doctor['title'] ?>
                                             </div>
 
                                             <div class="vet-service__text">
-                                                <?= $service['description'] ?>
+                                                <?= $doctor['description'] ?>
                                             </div>
 
                                             <div class="vet-service__item-footer">
                                                 <button type="button" class="btn btn-primary btn-sm btn-vet-button">Записаться</button>
 
-                                                <? if (!empty($service['cost'])): ?>
+                                                <? if (!empty($doctor['cost'])): ?>
                                                     <div class="vet-service__price">
-                                                        <?= $service['cost'] ?> руб.
+                                                        <?= $doctor['cost'] ?> руб.
                                                     </div>
                                                 <? endif; ?>
                                             </div>
@@ -49,10 +49,10 @@
                                 <? endif; ?>
                             <? endforeach; ?>
                         <? else: ?>
-                            <? foreach ($services as $doctor): ?>
+                            <? foreach ($services as $service): ?>
                                 <div class="vet-service__item">
                                     <div class="vet-service__name">
-                                        <?= $service['title'] ?>
+                                        <?= $service->title ?>
                                     </div>
 
                                     <div class="vet-service__text">
@@ -62,8 +62,7 @@
 
                                     <div class="vet-service__item-footer">
                                         <button type="button" class="btn btn-primary btn-sm btn-vet-button">Записаться</button>
-
-                                        <? if (!empty($services['cost'])): ?>
+                                        <? if (!empty($service['cost'])): ?>
                                             <div class="vet-service__price">
                                                 <?= $service['cost'] ?> руб.
                                             </div>
