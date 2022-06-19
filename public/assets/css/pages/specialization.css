@@ -1,11 +1,9 @@
 body {
     font-family: 'Bellota Text', cursive;
     font-weight: 400;
-    height: 200vh;
     background: url("../../img/laps-orange.png");
     background-repeat: repeat-y;
     background-size: 100% auto;
-    height: 5000px;
 }
 
 .vet-service-page {
