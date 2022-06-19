@@ -11,19 +11,42 @@
 	<title></title>
 </head>
 <body>
-<section class="vet-service-page">
-	<div class="container">
-		<div class="vet-service-page__inner">
-			<h1 class="vet-service-page__title">
-                <!-- TODO -->
-			</h1>
+    <section class="vet-service-page">
+        <div class="container">
+            <div class="vet-service-page__inner">
+                <h1 class="vet-service-page__title">
+                    <!-- TODO -->
+                </h1>
 
 
-			<div class="vet-service__list">
-                <? if (!empty($services)): ?>
-                    <? if ($services['is_doctors']): ?>
-                        <? foreach (array_values($services) as $service): ?>
-                            <? if ($service['id']): ?>
+                <div class="vet-service__list">
+                    <? if (!empty($services)): ?>
+                        <? if ($services['is_doctors']): ?>
+                            <? foreach (array_values($services) as $service): ?>
+                                <? if ($service['id']): ?>
+                                    <div class="vet-service__item">
+                                        <div class="vet-service__name">
+                                            <?= $service['title'] ?>
+                                        </div>
+
+                                        <div class="vet-service__text">
+                                            <?= $service['description'] ?>
+                                        </div>
+
+                                        <div class="vet-service__item-footer">
+                                            <button type="button" class="btn btn-primary btn-sm btn-vet-button">Записаться</button>
+
+                                            <? if (!empty($service['cost'])): ?>
+                                                <div class="vet-service__price">
+                                                    <?= $service['cost'] ?> руб.
+                                                </div>
+                                            <? endif; ?>
+                                        </div>
+                                    </div>
+                                <? endif; ?>
+                            <? endforeach; ?>
+                        <? else: ?>
+                            <? foreach ($services as $doctor): ?>
                                 <div class="vet-service__item">
                                     <div class="vet-service__name">
                                         <?= $service['title'] ?>
@@ -33,47 +56,26 @@
                                         <?= $service['description'] ?>
                                     </div>
 
+
                                     <div class="vet-service__item-footer">
                                         <button type="button" class="btn btn-primary btn-sm btn-vet-button">Записаться</button>
 
-                                        <? if (!empty($service['cost'])): ?>
+                                        <? if (!empty($services['cost'])): ?>
                                             <div class="vet-service__price">
                                                 <?= $service['cost'] ?> руб.
                                             </div>
                                         <? endif; ?>
                                     </div>
                                 </div>
-                            <? endif; ?>
-                        <? endforeach; ?>
-                    <? else: ?>
-                        <? foreach ($services as $doctor): ?>
-                            <div class="vet-service__item">
-                                <div class="vet-service__name">
-                                    <?= $service['title'] ?>
-                                </div>
-
-                                <div class="vet-service__text">
-                                    <?= $service['description'] ?>
-                                </div>
-
-
-                                <div class="vet-service__item-footer">
-                                    <button type="button" class="btn btn-primary btn-sm btn-vet-button">Записаться</button>
-
-                                    <? if (!empty($services['cost'])): ?>
-                                        <div class="vet-service__price">
-                                            <?= $service['cost'] ?> руб.
-                                        </div>
-                                    <? endif; ?>
-                                </div>
-                            </div>
-                        <? endforeach; ?>
+                            <? endforeach; ?>
+                        <? endif; ?>
                     <? endif; ?>
-                <? endif; ?>
-			</div>
-		</div>
-	</div>
-</section>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script type="module" src="../../../public/assets/js/index.js"></script>
 </body>
 </html>
 
