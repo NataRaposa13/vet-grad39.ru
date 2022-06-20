@@ -6,6 +6,7 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="../../../public/assets/css/pages/specialization.css">
+    <link rel="stylesheet" href="../../../public/assets/css/pages/doctor.css">
 
     <title>Врачи</title>
 </head>
@@ -15,10 +16,10 @@
             <div class="vet-card-page__inner">
                 <h1 class="vet-card-page__title">Врачи</h1>
 
-                <div class="vet-card__list">
+                <div class="vet-card__list cols-3">
                     <? if (!empty($doctors)): ?>
                         <? foreach ($doctors as $doctor): ?>
-							<div class="vet-card__item column pointer align-center">
+							<div class="vet-card__item column pointer align-center justify-center">
 								<div class="vet-card__img">
 									<img src="../../../public/assets/img/doctors/<?= $doctor['id'] ?>.png" alt="<?= $doctor['name'] ?>">
 								</div>
@@ -31,7 +32,7 @@
 									<?= join(", ", $doctor['specialities']) ?>
 								</div>
 
-								<div class="vet-card__item-footer">
+								<div class="vet-card__item-footer justify-content-center">
 									<button type="button" class="btn btn-primary btn-m btn-vet-button">Записаться на прием</button>
 								</div>
 							</div>
@@ -41,5 +42,7 @@
             </div>
         </div>
     </section>
+
+    <script type="module" src="../../../public/assets/js/index.js"></script>
 </body>
 </html>
