@@ -17,26 +17,24 @@
 
                 <div class="vet-card__list">
                     <? if (!empty($doctors)): ?>
-                        <? foreach (array_values($doctors) as $doctor): ?>
-                            <? if (is_object($doctor)): ?>
-                                <div class="vet-card__item column pointer align-center">
-                                    <div class="vet-card__img">
-                                        <img src="../../../public/assets/img/doctor/<?= $doctor['id'] ?>.png" alt="<?= $doctor['name'] ?>">
-                                    </div>
+                        <? foreach ($doctors as $doctor): ?>
+							<div class="vet-card__item column pointer align-center">
+								<div class="vet-card__img">
+									<img src="../../../public/assets/img/doctors/<?= $doctor['id'] ?>.png" alt="<?= $doctor['name'] ?>">
+								</div>
 
-                                    <div class="vet-card__name">
-                                        <?= $doctor['name'] ?>
-                                    </div>
+								<div class="vet-card__name">
+									<?= $doctor['name'] ?>
+								</div>
 
-                                    <div class="vet-card__text">
-                                        <?= join(", ", $doctor['specialities']) ?>
-                                    </div>
+								<div class="vet-card__text">
+									<?= join(", ", $doctor['specialities']) ?>
+								</div>
 
-                                    <div class="vet-card__item-footer">
-                                        <button type="button" class="btn btn-primary btn-m btn-vet-button">Записаться на прием</button>
-                                    </div>
-                                </div>
-                            <? endif; ?>
+								<div class="vet-card__item-footer">
+									<button type="button" class="btn btn-primary btn-m btn-vet-button">Записаться на прием</button>
+								</div>
+							</div>
                         <? endforeach; ?>
                     <? endif; ?>
                 </div>
