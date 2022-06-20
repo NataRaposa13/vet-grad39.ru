@@ -1,15 +1,3 @@
-body {
-    font-family: 'Bellota Text', cursive;
-    font-weight: 400;
-    background: url("../../img/laps-orange.png");
-    background-repeat: repeat-y;
-    background-size: 100% auto;
-}
-
-.vet-doctors .vet-card-page__title{
-    margin-bottom: 80px;
-}
-
 .vet-card-page__inner {
     padding: 250px 0;
 }

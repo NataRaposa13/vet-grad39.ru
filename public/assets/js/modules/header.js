@@ -17,6 +17,20 @@ export default class Header {
         });
     }
 
+    static setType(type) {
+        if (type === 'market') {
+            $('.header-blob-wrap').css('opacity', 0);
+            $('.vet-header .top-blue-blob').addClass('top-light-orange-blob');
+            $('.vet-header .logo img').attr('src', '../../../public/assets/img/icon/logo-market.svg');
+            $('.vet-header').addClass('market');
+            $('.market-nav-item').addClass('active');
+        }
+        else {
+            $('.header-blob-wrap').show();
+            $('.vet-header .logo img').attr('src', '../../../public/assets/img/icon/logo.svg');
+        };
+    }
+
     checkFilled({ afterScroll = false } = {}) {
         const needBanTransition = !afterScroll;
         let transitionValue = this.$header.css('transition');
