@@ -2,7 +2,7 @@ body {
     background: var(--light-green);
 }
 .vet-doctor {
-    padding-top: 300px;
+    padding-top: 350px;
 }
 
 .vet-doctor__inner {
@@ -54,7 +54,7 @@ body {
     bottom: 0;
     right: 4%;
     height: auto;
-    width: 42%;
+    width: 40%;
     display: block;
 }
 .vet-doctor__image img {

@@ -1,6 +1,7 @@
 @import './libs/uikit.css';
 @import './libs/uikit-rlt.css';
 @import './modules/form.css';
+@import './modules/cards.css';
 
 body {
     /* Color variables */
@@ -123,6 +124,19 @@ a {
     height: 721px;
     position: absolute;
     background: url('../img/orange-blob.svg') no-repeat;
+    background-size: contain;
+    background-position: center;
+    top: -489px;
+    left: -253px;
+    z-index: 901;
+}
+
+.top-light-orange-blob {
+    transition: height 0.5s ease;
+    width: 747px;
+    height: 721px;
+    position: absolute;
+    background: url('../img/light-orange-blob.png') no-repeat !important;
     background-size: contain;
     background-position: center;
     top: -489px;

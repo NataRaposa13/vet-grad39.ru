@@ -1,0 +1,33 @@
+.vet-market {
+    padding: 300px 0 0;
+}
+
+.vet-market__title {
+    font-size: 60px;
+    font-weight: 600;
+    margin-bottom: 100px;
+}
+
+.vet-market__title .product-count {
+    color: #CD3504;
+    font-size: 16px;
+}
+
+.vet-market__products .vet-card__item {
+    margin: 40px 20px;
+}
+
+.vet-market__products .vet-card__name {
+    font-size: 35px;
+    align-self: start;
+}
+
+.vet-market__products .vet-card__text {
+    align-self: start;
+    max-width: 80%;
+}
+
+.vet-market__products .vet-card__img:after {
+    background: linear-gradient(180deg, rgba(250, 252, 251, 0) 0%, #e7f2f0 88.54%);
+}
+

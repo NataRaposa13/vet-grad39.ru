@@ -15,6 +15,10 @@
     margin: 0 10px;
 }
 
+.vet-header.filled.market {
+    background: #ffa956;
+}
+
 .vet-header.filled .uk-navbar-container {
     color: var(--white);
 }
@@ -82,4 +86,18 @@
 
 .vet-profile-link img {
     height: 40px;
+}
+
+.header-blob-wrap {
+    transition: opacity 0.4s ease;
+}
+
+.market-nav-item.active {
+    color: var(--main-orange);
+    pointer-events: none;
+    cursor: default;
+}
+
+.filled .market-nav-item.active {
+    color: var(--light-green);
 }
