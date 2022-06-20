@@ -8,17 +8,27 @@ create table Clinics
     primary key (id)
 );
 
+create table WorkSchedules
+(
+    id int auto_increment not null,
+    title varchar(255),
+
+    primary key (id)
+);
+
 create table ClinicTimetable
 (
     id int auto_increment not null,
     clinic_id int not null,
-    dayOfTheWeek varchar(50) not null,
+    workSchedules_id int not null,
     startTime time not null,
     endTime time not null,
 
     primary key (id),
     foreign key fk_ClinicTimetable(clinic_id)
-        references Clinics(id)
+        references Clinics(id),
+    foreign key fk_WorkSchedules(workSchedules_id)
+        references WorkSchedules(id)
 );
 
 create table DoctorTimetable
@@ -26,7 +36,7 @@ create table DoctorTimetable
     id int auto_increment not null,
     doctor_id int not null,
     clinic_id int not null,
-    dayOfTheWeek varchar(50) not null,
+    workSchedules_id int not null,
     startTime time not null,
     endTime time not null,
     continuance time not null,
@@ -35,5 +45,7 @@ create table DoctorTimetable
     foreign key fk_DoctorTimetable(doctor_id)
         references Doctors(id),
     foreign key fk_AddressClinic(clinic_id)
-        references Clinics(id)
+        references Clinics(id),
+    foreign key fk_WorkSchedules(workSchedules_id)
+        references WorkSchedules(id)
 );
