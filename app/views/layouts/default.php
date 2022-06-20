@@ -57,7 +57,7 @@
 									</li>
 								<? endif; ?>
                                 <!-- TODO -->
-                                <li><a href="#">Врачи</a></li>
+                                <li><a href="/doctors">Врачи</a></li>
                                 <li><a href="#">Магазин</a></li>
                                 <li><a href="/#contacts">Контакты</a></li>
                                 <div class="uk-divider-vertical"></div>
