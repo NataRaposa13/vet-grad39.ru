@@ -2,6 +2,9 @@
 
 use vetgrad\Router;
 
+Router::add('^doctors/doctor-info/(?P<id>[a-z0-9-]+)/?$', ['controller' => 'Doctors', 'action' => 'doctor-info']);
+Router::add('^doctors/?$', ['controller' => 'Doctors', 'action' => 'view']);
+
 Router::add('^services/(?P<alias>[a-z0-9-]+)/?$', ['controller' => 'Services', 'action' => 'view']);
 
 //default routes
