@@ -55,6 +55,10 @@ body {
     justify-content: space-between !important;
 }
 
+.vet-card__item.justify-center {
+    justify-content: center !important;
+}
+
 .vet-card__item.pointer {
     transition: all 0.2s ease;
     pointer-events: all;
