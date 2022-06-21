@@ -8,6 +8,8 @@ class DoctorsController extends AppController
 {
 	public function viewAction()
 	{
+		$serviceTypes = R::find( 'ServiceType');
+
 		$doctors = R::getAll("
 									SELECT Doctors.id, 
 									       surname, 
@@ -28,7 +30,7 @@ class DoctorsController extends AppController
 											", [$doctor_id]);
 		}
 
-		$this->set(compact('doctors'));
+		$this->set(compact('doctors', 'serviceTypes'));
 	}
 
 	public function doctorInfoAction()
